@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Nishuville monogram</title>
+  <desc id="desc">A geometric green N with a purple orbital arc and a record-like central spindle.</desc>
+  <rect width="128" height="128" rx="28" fill="#151515"/>
+  <circle cx="64" cy="64" r="47" fill="none" stroke="#4C8A62" stroke-width="2" stroke-dasharray="2 8"/>
+  <path d="M29 95V33h13l44 55V33h13v62H86L42 40v55Z" fill="#1DB954"/>
+  <path d="M22 36A50 50 0 0 1 105 29" fill="none" stroke="#821DB9" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="104" cy="29" r="5" fill="#F5F3ED"/>
+  <circle cx="64" cy="64" r="6" fill="#151515" stroke="#F5F3ED" stroke-width="2"/>
+</svg>

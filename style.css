@@ -1,0 +1,62 @@
+:root {
+    --color-primary: #1DB954;
+    --color-accent: #821DB9;
+    --color-supporting: #4C8A62;
+
+    --color-background: #151515;
+    --color-text: #F5F3ED;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+header a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+main h2 {
+    color: var(--color-accent)
+}
+
+h1 {
+    color: var(--color-primary);
+    font-size: 48px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+#featured-projects {
+    padding: 32px;
+}   
+
+#featured-projects article {
+    background-color: #222222;
+    padding: 20px;
+    border-width: 1px;
+    border-color: var(--color-supporting);
+    border-style: solid;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
