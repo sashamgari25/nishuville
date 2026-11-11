@@ -14,14 +14,14 @@
     <body>
         <header>
             <div class="page-container">
-            <a href="index.html" aria-label="Nishuville home">
+            <a href="index.html" class="logo" aria-label="Nishuville home">
                 <img src="assets/nishuville-logo.svg"
                      alt=""
-                     width="48"
-                     height="48">
+                     width="96"
+                     height="96">
             </a>
             <nav class ="desktop-nav" aria-label="Main navigation">
-                <a href="index.html">Home</a>
+                <a href="index.html" aria-current="page">Home</a>
                 <a href="projects.html">Projects</a>
                 <a href="listening-room.html">Listening Room</a>
                 <a href="blog.html">Blog</a>
@@ -31,7 +31,7 @@
             <details class="mobile-menu">
                 <summary>Menu</summary>
                 <nav aria-label="Mobile navigation">
-                    <a href="index.html">Home</a>
+                    <a href="index.html" aria-current="page">Home</a>
                     <a href="projects.html">Projects</a>
                     <a href="listening-room.html">Listening Room</a>
                     <a href="blog.html">Blog</a>
@@ -47,69 +47,220 @@
                 <p class="eyebrow">"WELCOME TO THE JUNGLE" - GnR</p>
                 <h1>NISHUVILLE</h1>
                 <p>Software. Music. Sports.</p>
-                <p>From sotware engineering to music and sports, this is my little corner on the internet.</p>
+                <p>From software engineering to music and sports, this is my little corner on the internet.</p>
                 <div class="hero-buttons">
                 <a href="projects.html">Explore Projects</a>
                 <a href="listening-room.html">Listening Room</a>
                 </div>
+
+                <p class="background-N" aria-hidden="true">N<span class="square-dot"></span></p>
             </section>
             <section id="featured-projects">
-                <h2>Featured Projects</h2>
+            <div class="section-heading">
+                <p class="sub-eyebrow">01 / THE ARCHIVE</p>
+                <h2>Selected Work</h2>
+            </div>
                 <div class="project-grid">
-                    <article>
-                        <h3>IPL Fantasy Faceoff</h3>
-                        <p>This project was built as a site to blog mine and a friend's progress on the Indian Premier league's fantasy league and have other people around the world interact with us.</p>
+                    <article class="project-card">
+                        <p class="project-number">PROJECT / 001</p>
+                        <div class="project-preview">
+                            <img src="assets/iplfantasyfaceoff.png"
+                                 alt="Screenshot of the IPL Fantasy Faceoff website">
+                        </div>
+                        <div class="project-info">
+                            <h3>IPL Fantasy Faceoff</h3>
+
+                            <p>
+                                A platform for sharing fantasy IPL league
+                                progress and engaging with other cricket fans.
+                            </p>
+                            <div class="project-bottom">
+                            <ul class="tech-stack">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Supabase</li>
+                            </ul>
+
+                            <a class="project-link"
+                               href="https://iplfantasyfaceoff.vercel.app"
+                               aria-label="Open IPL Fantasy Faceoff website"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true">
+
+                                    <rect x="4" y="4" width="16" height="16" rx="2"/>
+                                    <path d="M9 15 15 9M9 9h6v6"/>
+
+                                </svg>
+                            </a>
+                            </div>
+                        </div>
                     </article>
-                    <article>
-                        <h3>Quality Solar Sydney</h3>
-                        <p>This was a group project where we built a real sydney based business a website so they can sell solar panels</p>
+                    <article class="project-card">
+                        <p class="project-number">PROJECT / 002</p>
+                        <div class="project-preview">
+                            <img src="assets/qualitysolarsydney.png"
+                                 alt="Screenshot of the Quality Solar Sydney website">
+                        </div>
+                        <div class="project-info">
+                            <h3>Quality Solar Sydney</h3>
+
+                            <p>This was a group project where we built a real sydney based business a website so they can sell solar panels</p>
+                            <div class="project-bottom">
+                            <ul class="tech-stack">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>PayloadCMS</li>
+                            </ul>
+
+                            <a class="project-link" 
+                               href="https://www.qualitysolarsydney.com.au/" 
+                               aria-label="Open Quality Solar Sydney website"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true">
+
+                                    <rect x="4" y="4" width="16" height="16" rx="2"/>
+                                    <path d="M9 15 15 9M9 9h6v6"/>
+
+                                </svg>
+                            </a>
+                            </div>
+                        </div>
                     </article>
                 </div>
             </section>
             <section id="top-albums">
+            <div class="section-heading">
+                <p class="sub-eyebrow">02 / THE COLLECTION</p>
                 <div class="top-albums-hero">
-                <h2>Top Albums</h2>
-                <a href="listening-room.html">Enter Listening Room</a>
+                <h2>On Rotation</h2>
                 </div>
+            </div>
                 <div class="album-grid">
-                    <article>
-                        <div class="album-artwork"></div>
-                        <h3>Blonde</h3>
-                        <p>This was pretty much a perfect album. No skips!</p>
-                        <p>Rating: 9.75/10</p>
+                    <article class="album-card">
+                        <div class="album-visual" tabindex="0">
+                            <img
+                                class="album-cover"
+                                src="assets/blond.jpg"
+                                alt="Blonde album cover by Frank Ocean"
+                            >
+
+                            <div class="album-overlay">
+                                <h3>Blonde</h3>
+                                <p>★ 9.75/10</p>
+                            </div>
+                        </div>
                     </article>
-                    <article>
-                        <div class="album-artwork"></div>
-                        <h3>Graduation</h3>
-                        <p>All bangers. Zero Skips. Insane Production</p>
-                        <p>Rating: 9.45/10</p>
-                    </article>
-                    <article>
-                        <div class="album-artwork"></div>
-                        <h3>Freudian</h3>
-                        <p>I really love the outro to basically every song on this album. Daniel Caesar's a genius.</p>
-                        <p>Rating: 9.35/10</p>
+                    
+                    <article class="album-card">
+                        <div class="album-visual" tabindex="0">
+                            <img
+                                class="album-cover"
+                                src="assets/graduation.jpg"
+                                alt="Graduation album cover by Kanye West"
+                                loading="lazy"
+                            >
+
+                            <div class="album-overlay">
+                                <h3>Graduation</h3>
+                                <p>★ 9.45/10</p>
+                            </div>
+                        </div>
                     </article>
 
-                    <article>
-                        <div class="album-artwork"></div>
-                        <h3>The Art of Loving</h3>
-                        <p>Some classics on this album. I think Olivia Dean really lays out a picture of what having loved means in this album.</p>
-                        <p>Rating: 8.60/10</p>
+                    <article class="album-card">
+                        <div class="album-visual" tabindex="0">
+                            <img
+                                class="album-cover"
+                                src="assets/freudian.jpg"
+                                alt="Freudian album cover by Daniel Caesar"
+                                loading="lazy"
+                            >
+
+                            <div class="album-overlay">
+                                <h3>Freudian</h3>
+                                <p>★ 9.35/10</p>
+                            </div>
+                        </div>
                     </article>
-                    <article>
-                        <div class="album-artwork"></div>
-                        <h3>Alone at Prom</h3>
-                        <p>I really love the RnB dark synth vibe that Tory had going on in this album</p>
-                        <p>Rating: 7.80/10</p>
+
+                    <article class="album-card">
+                        <div class="album-visual" tabindex="0">
+                            <img
+                                class="album-cover"
+                                src="assets/the_art_of_loving.jpg"
+                                alt="The Art of Loving album cover by Olivia Dean"
+                                loading="lazy"
+                            >
+
+                            <div class="album-overlay">
+                                <h3>The Art of Loving</h3>
+                                <p>★ 8.60/10</p>
+                            </div>
+                        </div>
                     </article>
+
+                    <article class="album-card">
+                        <div class="album-visual" tabindex="0">
+                            <img
+                                class="album-cover"
+                                src="assets/alone_at_prom.jpg"
+                                alt="Alone at Prom album cover by Tory Lanez"
+                                loading="lazy"
+                            >
+
+                            <div class="album-overlay">
+                                <h3>Alone at Prom</h3>
+                                <p>★ 7.80/10</p>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
             </section>
         </main>
 
-        <footer>
+        <footer class="site-footer">
             <div class="page-container">
-            <a href="mailto:sainischalreddyashamgari@gmail.com">Email me</a> 
+
+                <div class="footer-main">
+                    <p class="sub-eyebrow">NISHUVILLE / CONTACT</p>
+                    <h2>Let's Connect.</h2>
+                    <p>Have an project idea, music recommendation or just want to say hello?</p>
+
+                    <a class="footer-contact"
+                       href="mailto:YOUR_EMAIL">
+                        Get in touch ↗
+                    </a>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2026 Nishuville</p>
+                    <p>Made in Sydney</p>
+                </div>
+
             </div>
         </footer>
     </body>
