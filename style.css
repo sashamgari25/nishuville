@@ -569,3 +569,114 @@ a:focus-visible {
     box-shadow: 4px 4px 0 var(--color-accent);
     transform: translateY(-2px);
 }
+
+/* ======================================
+   NISHUVILLE AUDIO TOGGLE
+   ====================================== */
+
+.sound-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 10px 14px;
+
+    background: #222722;
+    color: var(--color-primary);
+
+    border: 1px solid var(--color-primary);
+    border-radius: 6px;
+
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Hover: subtle physical movement */
+
+.sound-toggle:hover {
+    background: #2b342d;
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 0 var(--color-accent);
+}
+
+.sound-toggle:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Icon */
+
+.sound-toggle-icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+/* Sound disabled */
+
+.sound-toggle[aria-pressed="false"] {
+    color: #898989;
+    border-color: #555;
+    background: #242424;
+}
+
+.sound-toggle[aria-pressed="false"] .sound-wave {
+    opacity: 0.15;
+}
+
+/* Keyboard accessibility */
+
+.sound-toggle:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .sound-toggle {
+        transition: none;
+    }
+
+    .sound-toggle:hover {
+        transform: none;
+    }
+}
+
+.sound-toggle {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1000;
+}
+
+.sound-toggle {
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.sound-toggle-label {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .sound-toggle {
+        bottom: 16px;
+        right: 16px;
+        width: 46px;
+        height: 46px;
+    }
+}

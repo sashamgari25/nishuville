@@ -7,6 +7,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+        <script src="script.js" defer></script>
+
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
         <title>Nishuville</title>
     </head>
@@ -20,13 +22,39 @@
                      width="96"
                      height="96">
             </a>
+
+            <button
+                id="sound-toggle"
+                class="sound-toggle"
+                type="button"
+                aria-label="Disable interface sounds"
+                aria-pressed="true"
+            >
+                <svg
+                    class="sound-toggle-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                >
+                    <path d="M11 5 6 9H3v6h3l5 4V5Z"/>
+                    <path class="sound-wave" d="M15.5 8.5a5 5 0 0 1 0 7"/>
+                    <path class="sound-wave" d="M19 5a10 10 0 0 1 0 14"/>
+                </svg>
+            </button>
             <nav class ="desktop-nav" aria-label="Main navigation">
-                <a href="index.html" aria-current="page">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="listening-room.html">Listening Room</a>
-                <a href="blog.html">Blog</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <a class="sound-nav" href="index.html" aria-current="page">Home</a>
+                <a class="sound-nav" href="projects.html">Projects</a>
+                <a class="sound-nav" href="listening-room.html">Listening Room</a>
+                <a class="sound-nav" href="blog.html">Blog</a>
+                <a class="sound-nav" href="about.html">About</a>
+                <a class="sound-nav" href="contact.html">Contact</a>
             </nav>
             <details class="mobile-menu">
                 <summary>Menu</summary>
@@ -49,8 +77,8 @@
                 <p>Software. Music. Sports.</p>
                 <p>From software engineering to music and sports, this is my little corner on the internet.</p>
                 <div class="hero-buttons">
-                <a href="projects.html">Explore Projects</a>
-                <a href="listening-room.html">Listening Room</a>
+                <a class="sound-nav" href="projects.html">Explore Projects</a>
+                <a class="sound-nav" href="listening-room.html">Listening Room</a>
                 </div>
 
                 <p class="background-N" aria-hidden="true">N<span class="square-dot"></span></p>
@@ -82,7 +110,7 @@
                                 <li>Supabase</li>
                             </ul>
 
-                            <a class="project-link"
+                            <a class="project-link sound-nav"
                                href="https://iplfantasyfaceoff.vercel.app"
                                aria-label="Open IPL Fantasy Faceoff website"
                                target="_blank"
@@ -125,7 +153,7 @@
                                 <li>PayloadCMS</li>
                             </ul>
 
-                            <a class="project-link" 
+                            <a class="project-link sound-nav" 
                                href="https://www.qualitysolarsydney.com.au/" 
                                aria-label="Open Quality Solar Sydney website"
                                target="_blank"
@@ -247,10 +275,10 @@
 
                 <div class="footer-main">
                     <p class="sub-eyebrow">NISHUVILLE / CONTACT</p>
-                    <h2>Let's Connect.</h2>
+                    <h2 id="footer-heading">Let's Connect.</h2>
                     <p>Have an project idea, music recommendation or just want to say hello?</p>
 
-                    <a class="footer-contact"
+                    <a class="footer-contact sound-nav"
                        href="mailto:YOUR_EMAIL">
                         Get in touch ↗
                     </a>
