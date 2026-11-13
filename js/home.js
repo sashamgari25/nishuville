@@ -52,7 +52,7 @@ function renderAlbums(albumsToRender) {
         albumHoverTitle.textContent = album.title;
 
         const albumHoverRating = document.createElement("p");
-        albumHoverRating.textContent = `★ ${album.rating.toFixed(2)}/10`;
+        albumHoverRating.textContent = `★ ${getAlbumRating(album).toFixed(2)}/10`;
 
         // Assemble overlay
         albumOverlay.appendChild(albumHoverTitle);
@@ -163,7 +163,7 @@ function renderProjects(projectsToRender) {
 
 // Select the five highest-rated albums
 const topAlbums = [...albums]
-    .sort((a, b) => b.rating - a.rating)
+    .sort((a, b) => getAlbumRating(b) - getAlbumRating(a))
     .slice(0, 5);
 
 // Select featured projects
