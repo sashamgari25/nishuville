@@ -1,0 +1,130 @@
+{
+  "id": "8294645a-f996-44b6-9060-7f189b9f59f3",
+  "musicbrainzReleaseId": "8294645a-f996-44b6-9060-7f189b9f59f3",
+  "title": "Blond",
+  "artist": "Frank Ocean",
+  "cover": "https://coverartarchive.org/release/8294645a-f996-44b6-9060-7f189b9f59f3/32623366008-500.jpg",
+  "holisticRating": null,
+  "review": "",
+  "tracks": [
+    {
+      "id": "004eedd5-8396-4eef-9de2-940e5ca9a7c0",
+      "title": "Nikes",
+      "position": 1,
+      "disc": 1,
+      "rating": null
+    },
+    {
+      "id": "fe8b367d-78ef-4ec3-9c9a-ff3435a65d5b",
+      "title": "Ivy",
+      "position": 2,
+      "disc": 1,
+      "rating": null
+    },
+    {
+      "id": "d90934be-302a-4e0d-a1dd-b94df3421f33",
+      "title": "Pink + White",
+      "position": 3,
+      "disc": 1,
+      "rating": null
+    },
+    {
+      "id": "8fd48f3d-03b3-4767-abdf-95a8c4e082e6",
+      "title": "Be Yourself",
+      "position": 4,
+      "disc": 1,
+      "rating": null
+    },
+    {
+      "id": "c954a317-0690-4749-abcb-39f74423509e",
+      "title": "Solo",
+      "position": 5,
+      "disc": 1,
+      "rating": null
+    },
+    {
+      "id": "1cb2d6e8-22dc-44f1-b82a-bfe82f18cfde",
+      "title": "Skyline To",
+      "position": 6,
+      "disc": 1,
+      "rating": null
+    },
+    {
+      "id": "039326dc-e853-4de8-84c5-dd91c31d4256",
+      "title": "Self Control",
+      "position": 7,
+      "disc": 1,
+      "rating": null
+    },
+    {
+      "id": "c4625cbf-f5a8-46d9-baa5-ba8c3b9127bc",
+      "title": "Good Guy",
+      "position": 8,
+      "disc": 1,
+      "rating": null
+    },
+    {
+      "id": "3e341bc1-16e2-43e3-adf5-d7a8c2059b0d",
+      "title": "Nights",
+      "position": 9,
+      "disc": 1,
+      "rating": null
+    },
+    {
+      "id": "c68ffb4b-3dfb-4a42-898b-f75606a4a988",
+      "title": "Solo (reprise)",
+      "position": 10,
+      "disc": 1,
+      "rating": null
+    },
+    {
+      "id": "ab8d011f-b42a-4cd9-88e8-c0fac54f20a8",
+      "title": "Pretty Sweet",
+      "position": 11,
+      "disc": 1,
+      "rating": null
+    },
+    {
+      "id": "03632781-7a52-450b-b56b-b147ea06411a",
+      "title": "Facebook Story",
+      "position": 12,
+      "disc": 1,
+      "rating": null
+    },
+    {
+      "id": "08d829c0-a4a2-403f-855b-955d8751b37c",
+      "title": "Close to You",
+      "position": 13,
+      "disc": 1,
+      "rating": null
+    },
+    {
+      "id": "a1f25623-f56c-4f36-bcce-67488d04e7cc",
+      "title": "White Ferrari",
+      "position": 14,
+      "disc": 1,
+      "rating": null
+    },
+    {
+      "id": "c3e901e3-f2fb-4b84-add4-ec16ce173476",
+      "title": "Seigfried",
+      "position": 15,
+      "disc": 1,
+      "rating": null
+    },
+    {
+      "id": "6f390fd7-6806-4d0c-aa34-7b748b7a099e",
+      "title": "Godspeed",
+      "position": 16,
+      "disc": 1,
+      "rating": null
+    },
+    {
+      "id": "c58cbe16-1cf3-4abe-8ecf-72efc3df47af",
+      "title": "Futura Free",
+      "position": 17,
+      "disc": 1,
+      "rating": null
+    }
+  ]
+}

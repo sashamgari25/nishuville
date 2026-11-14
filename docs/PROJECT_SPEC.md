@@ -164,3 +164,4 @@ Changes to architectural decisions and project scope will be documented as devel
 - Complex server-side infrastructure
 
 These features may be reconsidered if future requirements justify them.
+

@@ -91,24 +91,25 @@ This document tracks the development of Nishuville, including completed features
 
 ## Milestone 06: APIs & Asynchronous JavaScript
 
-**Status:** In progress
-
-### Objectives
-- Learn Promises, asynchronous functions, fetch() and JSON.
-- Evaluate music metadata APIs.
-- Retrieve album metadata and tracklists automatically.
-- Integrate external music data with personal ratings.
-- Handle network errors, loading states and missing information.
+**Status:** Completed
 
 ### Completed
-- [ ] Project README and development log
-- [ ] 06A: Asynchronous JavaScript fundamentals
-- [ ] 06B: Music API selection
-- [ ] 06C: Album metadata fetcher
-- [ ] 06D: Tracklists and artwork
-- [ ] 06E: Rating-data integration
-- [ ] 06F: Loading, errors and caching
-- [ ] 06G: Refactoring and testing
+- Learned Promises, async/await, fetch, and JSON parsing.
+- Implemented MusicBrainz album and release searching.
+- Retrieved album tracklists and transformed multi-disc data.
+- Integrated Cover Art Archive for album artwork.
+- Implemented automatic artwork fallback across releases.
+- Preserved selected-release tracklists when using alternative artwork.
+- Added incomplete-import checks and error handling.
+- Exported imported album metadata to JSON files.
+- Verified the full import workflow using Blonde.
+
+### Technical decisions
+- Fetch metadata when adding albums, not when visitors load the site.
+- Store imported album data separately from personal ratings.
+- Initialise new track ratings and holistic ratings to null.
+- Require artwork and a nonempty tracklist for completed imports.
+- Keep artwork-source and tracklist-source release IDs separate.
 
 ---
 
