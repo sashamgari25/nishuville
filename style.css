@@ -495,6 +495,7 @@ a:focus-visible {
     gap: var(--space-md);
     border-top: 1px solid #444;
     padding-top: var(--space-sm);
+    padding-right: 70px;
     font-family: var(--font-mono);
     font-size: 0.75rem;
 }
