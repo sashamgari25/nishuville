@@ -1,0 +1,106 @@
+#hero {
+    position: relative;
+    isolation: isolate;
+    padding-bottom: var(--space-xxl);
+    border-bottom: 1px solid var(--color-primary);
+}
+
+#hero h1 {
+    font-family: var(--font-main);
+    font-size: clamp(3rem, 40vw, 9rem);
+    text-shadow: 5px 5px 10px var(--color-accent);
+    margin-block: 0;
+    line-height: 1.05;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-text);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(255,255,255,0.25);
+    transition: background-color var(--transition-normal), transform var(--transition-fast);
+}
+
+.hero-buttons a:hover,
+.hero-buttons a:focus-visible {
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    transform: scale(1.10);
+    outline-offset: 0;
+}
+
+.hero-buttons a:active {
+    background-color: var(--color-accent);
+    transform: scale(0.90);
+}
+
+.eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+#hero .eyebrow {
+    margin-bottom: 16px;
+}
+
+#hero p {
+    margin-top: 0;
+}
+
+.background-N {
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30rem;
+    font-family: var(--font-main);
+    font-weight: 700;
+    line-height: 1;
+    color: #303030;
+    margin: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.square-dot {
+    display: inline-block;
+    width: 0.15em;
+    height: 0.15em;
+    background-color: currentColor;
+    margin-left: 0.03em;
+}
+
+@media (max-width: 900px) {
+    #hero h1 {
+        font-size: clamp(3rem, 40vw, 6rem);
+    }
+
+    .background-N {
+        font-size: 25rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .background-N {
+        display: none;
+    }
+
+    #hero h1 {
+        font-size: clamp(2rem, 10vw, 4rem);
+    }
+}
